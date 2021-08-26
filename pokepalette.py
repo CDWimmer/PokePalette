@@ -48,7 +48,7 @@ def get_palette(pokemon: Union[str, int], style: str = "hex") -> Union[list, np.
         raise NotImplementedError("The only supported colour formats are hex and RGB, for now.")
 
 
-def get_colormap(pokemon: Union[str, int]) -> ListedColormap:
+def get_colourmap(pokemon: Union[str, int]) -> ListedColormap:
     """Turns a stored colour palette into a matplotlib ListedColormap.
     Will throw an error of matplotlib isn't available. """
     if isinstance(ListedColormap, ModuleNotFoundError):
@@ -56,6 +56,8 @@ def get_colormap(pokemon: Union[str, int]) -> ListedColormap:
     colours = get_colours_array(pokemon)
     return ListedColormap(colours)
 
+
+get_colormap = get_colourmap
 
 if __name__ == '__main__':
     pass
