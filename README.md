@@ -1,7 +1,11 @@
 # PokePalette
 
+![license](https://img.shields.io/github/license/CDWimmer/PokePalette?style=flat-square)
+![stars](https://img.shields.io/github/stars/CDWimmer/PokePalette?style=flat-square)
+![size](https://img.shields.io/github/languages/code-size/CDWimmer/PokePalette?style=flat-square)
 
 649 Pokémon, broken down into CSVs of their RGB colour palettes. 
+
 Complete with a Python library to convert names or Pokédex IDs into either #hex colours, or MatPlotLib compatible ListedColormaps.
 
 ---
@@ -42,3 +46,4 @@ Naturally this requires matplotlib be installed.
 
 ---
 ###### And yes, it's using the proper spelling of "colour" internally.
+![Twitter Follow](https://img.shields.io/twitter/follow/CharlesDWimmer?label=Follow%20me&logoColor=orange&style=social)
