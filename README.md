@@ -1,9 +1,10 @@
 # PokePalette
 
-![license](https://img.shields.io/github/license/CDWimmer/PokePalette?style=flat-square)
-![stars](https://img.shields.io/github/stars/CDWimmer/PokePalette?style=flat-square)
-![size](https://img.shields.io/github/languages/code-size/CDWimmer/PokePalette?style=flat-square)
-![coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-ko--fi.com%2Fch4rl1e-orange?link=https://ko-fi.com/ch4rl1e&style=social)
+[![license](https://img.shields.io/github/license/CDWimmer/PokePalette?style=flat-square)](/LICENCE)
+[![pyversion](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)]()
+[![stars](https://img.shields.io/github/stars/CDWimmer/PokePalette?style=flat-square)]()
+[![size](https://img.shields.io/github/languages/code-size/CDWimmer/PokePalette?style=flat-square)]()
+[![coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-ko--fi.com%2Fch4rl1e-orange?link=https://ko-fi.com/ch4rl1e&style=social)](https://ko-fi.com/ch4rl1e)
 
 649 Pokémon, broken down into CSVs of their RGB colour palettes. 
 
