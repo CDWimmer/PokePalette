@@ -48,4 +48,4 @@ Naturally this requires matplotlib be installed.
 
 ---
 ###### And yes, it's using the proper spelling of "colour" internally.
-![Twitter Follow](https://img.shields.io/twitter/follow/CharlesDWimmer?label=Follow%20me&logoColor=orange&style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/CharlesDWimmer?label=Follow%20me&logoColor=orange&style=social)](https://twitter.com/CDWimmer)
