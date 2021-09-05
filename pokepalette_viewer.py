@@ -1,5 +1,5 @@
 """
-Helper functions to view or pick from the palette of a pokemon.
+Helper functions to view the matplotlib colourmap of, or pick from, the palette of a pokemon.
 """
 
 import matplotlib.pyplot as plt
@@ -28,24 +28,13 @@ def _plot_example(colormap):
 
 
 def view(pokemon):
+    """
+    Display the listedcolourmap of a pokemon.
+    """
     colours = pokepalette.get_colours_array(pokemon)
     newcmp = ListedColormap(colours)
     print(pokepalette.rgb_to_hex(colours))
     _plot_example(newcmp)
-
-
-def hex_to_rgb(hex_colour: str, floating_point=False) -> tuple:
-    """
-    Turn a single hex colour value (#112233) into a tuple of R, G, B as ints (0-255) or, if floating_points is set to
-     True, floats (0-1).
-    """
-    # Adapted from https://stackoverflow.com/questions/29643352/converting-hex-to-rgb-value-in-python
-    value = hex_colour.lstrip('#')
-    lv = len(value)
-    if floating_point:
-        return tuple(int(value[i:i + lv // 3], 16) / 255 for i in range(0, lv, lv // 3))
-    else:
-        return tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
 
 
 def invert_rgb(rgb_array, floating_point=False) -> list:
@@ -93,9 +82,6 @@ def picker(pokemon: Union[str, int] = 1, on_top: bool = True):
         elif new_name.lower() not in pokes_list.all_pokes:
             text.set("Unknown pokemon name!")
             return
-        # except Exception as e:  # just throw away anything weird that gets entered...
-        #     print(str(e))
-        #     print("aaa")
 
         text.set(f"Loaded {new_name.capitalize()}.")
         poke_name_entry_text.set(new_name.lower())
