@@ -9,7 +9,9 @@ except ModuleNotFoundError as e:
 
 
 def rgb_to_hex(colours) -> list:
-    """Turn a numpy ndarray of rgb values into a list of hex colour values"""
+    """
+    Turn a tuple/list/ndarray of rgb values into a list of hex colour values
+    """
     # inspired by https://stackoverflow.com/a/43004474/9311137
     as_ints = np.array(colours * 255, dtype=int)  # convert to int
     return ['#%02x%02x%02x' % (r, g, b) for r, g, b in as_ints]  # wtf

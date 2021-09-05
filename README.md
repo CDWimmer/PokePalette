@@ -34,7 +34,7 @@ The individual CSV files of the palettes as RGB values can be found in the [pale
 Naturally this requires matplotlib be installed. 
 ```python
 >>> import pokepalette
->>> newcmp = pokepalette.get_colormap("torchic")
+>>> newcmp = pokepalette.get_colormap(f"torchic")
 ```
 
 
@@ -45,6 +45,15 @@ Naturally this requires matplotlib be installed.
 >>> pokepalette_viewer.view("torchic")
 ```
 ![torchic colour palette](https://i.imgur.com/JEfZjBs.png)
+
+### Colour Picker
+There is also included a rudimentary "colour picker" GUI tool that displays all colours as clickable buttons, which copies the clicked hex code to your clipboard.
+
+```python
+>>> import pokepalette_viewer
+>>> pokepalette_viewer.picker(pokemon=f"torchic", on_top=True)
+```
+![torchic_colour_picker](https://i.imgur.com/WF2ztLz.png)
 
 ---
 ###### And yes, it's using the proper spelling of "colour" internally.

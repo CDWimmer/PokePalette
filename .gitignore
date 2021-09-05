@@ -4,3 +4,4 @@ venv/
 __pycache__/
 pokepalette_scraper.py
 wipe_palettes.bat
+viewer_test.py
