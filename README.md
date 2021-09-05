@@ -48,10 +48,10 @@ Naturally this requires matplotlib be installed.
 
 ### Colour Picker
 There is also included a rudimentary "colour picker" GUI tool that displays all colours as clickable buttons, which copies the clicked hex code to your clipboard.
-
+Text entry box accepts both names and IDs. 
 ```python
 >>> import pokepalette_viewer
->>> pokepalette_viewer.picker(pokemon=f"torchic", on_top=True)
+>>> pokepalette_viewer.picker(pokemon=255, on_top=True)  # torchic = 255
 ```
 ![torchic_colour_picker](https://i.imgur.com/WF2ztLz.png)
 
